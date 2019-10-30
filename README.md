@@ -1,2 +1,4 @@
 # Ground-station_2020
-Ground station repo for SAC 2020
+## Antenna Tracking Software
+### Master Branch
+Ground station projects repo for SAC 2020
