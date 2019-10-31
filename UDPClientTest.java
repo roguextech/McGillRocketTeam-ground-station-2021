@@ -25,9 +25,9 @@ class UDPClientTest {
 		String response;
 		try {
 			response = client.sendMessage("HELLO WORLD!");
-			assertEquals("acknowledged", response);
+			assertEquals("Data Received", response);
 			response = client.sendMessage("This is a TEST");
-			assertEquals("acknowledged", response);
+			assertEquals("Data Received", response);
 		} catch (IOException e) {
 			fail("Error");
 		}
