@@ -5,7 +5,8 @@ int combineNibbles(int leftNibble, int rightNibble);
 int* extractNibbles(char cIn);
 
 int main(int argc, const char* argv[]) {
-	int cIn = '';
+	int encodingTable[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',', '.', '-', '\n', 'S', 'E'};
+	int cIn = 'd';
 	int* temp;
 	temp = malloc((2 * sizeof(int)));
 	temp = extractNibbles(cIn);
