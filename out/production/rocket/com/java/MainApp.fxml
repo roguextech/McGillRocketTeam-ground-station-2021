@@ -42,12 +42,9 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <Label text="Latitude:" />
-                                    <Label text="Longitude:" GridPane.rowIndex="1" />
+                                    <Label text="Latitude" />
+                                    <Label text="Longitude" GridPane.rowIndex="1" />
                                  </children>
-                                 <HBox.margin>
-                                    <Insets left="20.0" />
-                                 </HBox.margin>
                               </GridPane>
                            </children>
                         </HBox>
@@ -79,8 +76,8 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Label text="Peak Altitude:" />
-                              <Label text="Current Altitude:" GridPane.rowIndex="1" />
+                              <Label text="Peak Altitude" />
+                              <Label text="Current Altitude" GridPane.rowIndex="1" />
                            </children>
                            <padding>
                               <Insets left="10.0" />
@@ -96,8 +93,8 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <children>
-                              <Label text="Peak Velocity:" />
-                              <Label text="Current Velocity:" GridPane.rowIndex="1" />
+                              <Label text="Peak Velocity" />
+                              <Label text="Current Velocity" GridPane.rowIndex="1" />
                            </children>
                            <padding>
                               <Insets left="10.0" />
@@ -113,8 +110,8 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <children>
-                              <Label text="Peak Acceleration:" />
-                              <Label text="Current Acceleration:" GridPane.rowIndex="1" />
+                              <Label text="Peak Acceleration" />
+                              <Label text="Current Acceleration" GridPane.rowIndex="1" />
                            </children>
                            <padding>
                               <Insets left="10.0" />
@@ -129,7 +126,7 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <children>
-                              <Label text="Current RSSI:" />
+                              <Label text="Current RSSI" />
                            </children>
                            <padding>
                               <Insets left="10.0" />
@@ -219,62 +216,13 @@
                            <children>
                               <VBox prefHeight="688.0" prefWidth="237.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <CheckBox mnemonicParsing="false" selected="true" text="Altitude Graph">
-                                       <padding>
-                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                       </padding>
-                                       <VBox.margin>
-                                          <Insets left="5.0" top="5.0" />
-                                       </VBox.margin>
-                                    </CheckBox>
-                                    <CheckBox mnemonicParsing="false" selected="true" text="Velocity Graph">
-                                       <padding>
-                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                       </padding>
-                                       <VBox.margin>
-                                          <Insets left="5.0" />
-                                       </VBox.margin>
-                                    </CheckBox>
-                                    <CheckBox mnemonicParsing="false" selected="true" text="Acceleration Graph">
-                                       <padding>
-                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                       </padding>
-                                       <VBox.margin>
-                                          <Insets left="5.0" />
-                                       </VBox.margin>
-                                    </CheckBox>
-                                    <CheckBox mnemonicParsing="false" selected="true" text="Temperature Graph">
-                                       <padding>
-                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                       </padding>
-                                       <VBox.margin>
-                                          <Insets left="5.0" />
-                                       </VBox.margin>
-                                    </CheckBox>
-                                    <CheckBox mnemonicParsing="false" selected="true" text="RSSI Graph">
-                                       <padding>
-                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                       </padding>
-                                       <VBox.margin>
-                                          <Insets left="5.0" />
-                                       </VBox.margin>
-                                    </CheckBox>
-                                    <CheckBox mnemonicParsing="false" selected="true" text="Latitude Graph">
-                                       <padding>
-                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                       </padding>
-                                       <VBox.margin>
-                                          <Insets left="5.0" />
-                                       </VBox.margin>
-                                    </CheckBox>
-                                    <CheckBox layoutX="10.0" layoutY="98.0" mnemonicParsing="false" selected="true" text="Longitude Graph">
-                                       <padding>
-                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                       </padding>
-                                       <VBox.margin>
-                                          <Insets bottom="5.0" left="5.0" />
-                                       </VBox.margin>
-                                    </CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Altitude Graph" />
+                                    <CheckBox mnemonicParsing="false" text="Velocity Graph" />
+                                    <CheckBox mnemonicParsing="false" text="Acceleration Graph" />
+                                    <CheckBox mnemonicParsing="false" text="Temperature Graph" />
+                                    <CheckBox mnemonicParsing="false" text="RSSI Graph" />
+                                    <CheckBox mnemonicParsing="false" text="Latitude Graph" />
+                                    <CheckBox layoutX="10.0" layoutY="98.0" mnemonicParsing="false" text="Longitude Graph" />
                                  </children>
                               </VBox>
                            </children>
@@ -293,7 +241,7 @@
                                                 <Insets left="20.0" top="20.0" />
                                              </padding>
                                           </Label>
-                                          <LineChart minHeight="180.0">
+                                          <LineChart minHeight="132.0" prefHeight="148.0" prefWidth="974.0">
                                              <xAxis>
                                                 <CategoryAxis side="BOTTOM" />
                                              </xAxis>
@@ -309,7 +257,7 @@
                                                 <Insets left="20.0" top="20.0" />
                                              </padding>
                                           </Label>
-                                          <LineChart layoutX="10.0" layoutY="48.0" minHeight="180.0">
+                                          <LineChart layoutX="10.0" layoutY="48.0" minHeight="132.0" prefHeight="148.0" prefWidth="974.0">
                                              <xAxis>
                                                 <CategoryAxis side="BOTTOM" />
                                              </xAxis>
@@ -325,7 +273,7 @@
                                                 <Insets left="20.0" top="20.0" />
                                              </padding>
                                           </Label>
-                                          <LineChart layoutX="10.0" layoutY="233.0" minHeight="180.0">
+                                          <LineChart layoutX="10.0" layoutY="233.0" minHeight="132.0" prefHeight="148.0" prefWidth="974.0">
                                              <xAxis>
                                                 <CategoryAxis side="BOTTOM" />
                                              </xAxis>
@@ -341,7 +289,7 @@
                                                 <Insets left="20.0" top="20.0" />
                                              </padding>
                                           </Label>
-                                          <LineChart layoutX="10.0" layoutY="419.0" minHeight="180.0">
+                                          <LineChart layoutX="10.0" layoutY="419.0" minHeight="132.0" prefHeight="148.0" prefWidth="974.0">
                                              <xAxis>
                                                 <CategoryAxis side="BOTTOM" />
                                              </xAxis>
@@ -357,7 +305,7 @@
                                                 <Insets left="20.0" top="20.0" />
                                              </padding>
                                           </Label>
-                                          <LineChart layoutX="10.0" layoutY="564.0" minHeight="180.0">
+                                          <LineChart layoutX="10.0" layoutY="564.0" minHeight="132.0" prefHeight="148.0" prefWidth="974.0">
                                              <xAxis>
                                                 <CategoryAxis side="BOTTOM" />
                                              </xAxis>
@@ -373,7 +321,7 @@
                                                 <Insets left="20.0" top="20.0" />
                                              </padding>
                                           </Label>
-                                          <LineChart layoutX="10.0" layoutY="726.0" minHeight="180.0">
+                                          <LineChart layoutX="10.0" layoutY="726.0" minHeight="132.0" prefHeight="148.0" prefWidth="974.0">
                                              <xAxis>
                                                 <CategoryAxis side="BOTTOM" />
                                              </xAxis>
@@ -389,7 +337,7 @@
                                                 <Insets left="20.0" top="20.0" />
                                              </padding>
                                           </Label>
-                                          <LineChart layoutX="10.0" layoutY="896.0" minHeight="180.0">
+                                          <LineChart layoutX="10.0" layoutY="896.0" minHeight="132.0" prefHeight="148.0" prefWidth="974.0">
                                              <xAxis>
                                                 <CategoryAxis side="BOTTOM" />
                                              </xAxis>
@@ -416,7 +364,7 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <SplitPane dividerPositions="0.25, 0.5, 0.75" prefHeight="689.6" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <SplitPane dividerPositions="0.20970266040688576, 0.3998435054773083, 0.5985915492957746" prefHeight="689.6" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <items>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                            <children>
