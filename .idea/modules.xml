@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/rocket.iml" filepath="$PROJECT_DIR$/rocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/groundstation.iml" filepath="$PROJECT_DIR$/.idea/groundstation.iml" />
     </modules>
   </component>
 </project>
