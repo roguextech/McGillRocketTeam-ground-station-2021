@@ -11,7 +11,10 @@
             fx:controller="sample.Controller"
             prefHeight="400.0" prefWidth="600.0">
     <HBox>
-
+        <Button fx:id="loadProcedureButton" onAction="#loadProcedure">Load Procedure</Button>
     </HBox>
+    <VBox>
+        <ListView fx:id="procedures"></ListView>
+    </VBox>
 
 </VBox>
