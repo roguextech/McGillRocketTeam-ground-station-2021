@@ -2,6 +2,11 @@
   <library name="lib">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" />
+      <root url="jar://$PROJECT_DIR$/commons-collections4-4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-ooxml-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-ooxml-schemas-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/xmlbeans-2.6.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
