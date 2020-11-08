@@ -82,7 +82,7 @@
                               <Label text="Peak Altitude:" />
                               <Label text="Current Altitude:" GridPane.rowIndex="1" />
                               <Label fx:id="currentAltitudeLabel" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <Label fx:id="peakAltitudeLabel" text="0" GridPane.columnIndex="1" />
+                              <Label fx:id="peakAltitudeLabel" text="5" GridPane.columnIndex="1" />
                            </children>
                            <padding>
                               <Insets left="10.0" />

@@ -12,7 +12,7 @@ import javafx.scene.control.Label;
 
 public class MainController {
 	ArrayList<String> strings = new ArrayList<String>(
-			Arrays.asList("1","2","3","4","5"));
+			Arrays.asList("1","2","3","4","5","1","2","3","4","5","1","2","3","4","5","1","2","3","4","5"));
 	
 	
 	@FXML
@@ -22,11 +22,12 @@ public class MainController {
 	public void setPeakAltitudeLabel(String value){
 		this.peakAltitudeLabel.setText(value);
 	}
+    int i = 0;
 	
-	private void startTimer() {
+	public void startTimer() {
 	    Timeline timeline = new Timeline();
 	    timeline.getKeyFrames().add(new KeyFrame(Duration.ZERO, event -> {
-	        int i = 0;
+
 	        setPeakAltitudeLabel(strings.get(i).toString());
 	        i++;
 	    }));
