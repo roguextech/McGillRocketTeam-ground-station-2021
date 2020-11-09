@@ -29,6 +29,8 @@ public class MainApp extends Application {
 	
     @Override
     public void start(Stage stage) throws Exception {
+    	
+    	
         Label l = new Label("McGill Rocket Team Ground Station");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("fxml/MainApp.fxml"));
         Parent root = loader.load();
