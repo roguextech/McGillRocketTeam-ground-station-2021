@@ -1,10 +1,12 @@
 
 
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import javafx.animation.Animation.*;
+import controller.Parser;
 import controller.gui.MainController;
 import javafx.application.Application;
 import javafx.scene.Parent;
@@ -35,13 +37,27 @@ public class MainApp extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("fxml/MainApp.fxml"));
         Parent root = loader.load();
         MainController mainController = loader.<MainController>getController();
-        mainController.startTimer();
+        
         Scene mainApp = new Scene(root, 1920,1080);
 
         stage.setTitle("McGill Rocket Team Ground Station");
         stage.setScene(mainApp);
         stage.show();
-
+        
+        ArrayList<double[]> myDataList = new ArrayList<double[]>();
+        Parser parser = new Parser(11);
+    	ArrayList<String> myData = (ArrayList<String>) Parser.storeData("src/main/resources/Data_last_year.txt");
+    	
+    	for (String str:myData) {
+    		try {
+    		//	System.out.println(parser.parse(str));
+    			myDataList.add(parser.parse((str)));
+    		} catch (IllegalArgumentException e) {			
+    	//		System.out.println("Line of data does not start with S and/or does not end with E and/or ','");
+    		}
+    	}
+    	
+    		mainController.startTimer(myDataList);	
     }
 
     public static void main(String[] args) {
