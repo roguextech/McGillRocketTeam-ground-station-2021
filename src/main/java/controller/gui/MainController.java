@@ -80,7 +80,7 @@ public class MainController {
     		setCurrentAccelerationLabel(String.valueOf(myDataList.get(i)[5]));
     		//setCurrentRSSI
     		setCurrentRSSILabel(String.valueOf(myDataList.get(i)[9]));
-    		if(i++<myDataList.size()) i++;
+    		if((i+1)<myDataList.size()) i++;
     	}));
     	timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(1)));
     	timeline.setCycleCount(Timeline.INDEFINITE);
