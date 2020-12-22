@@ -23,7 +23,7 @@ public class MainController {
 	public Label peakAccelerationLabel;
 	public Label currentAccelerationLabel;
 	public Label currentRSSILabel;
-	PauseTransition transition = new PauseTransition(Duration.seconds(1));
+//	PauseTransition transition = new PauseTransition(Duration.seconds(1));
 	
 	
 	@FXML
