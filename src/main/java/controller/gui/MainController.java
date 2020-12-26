@@ -75,7 +75,7 @@ public class MainController {
     		setCurrentVelocityLabel(String.valueOf(myDataList.get(i)[4]));
     		//set Peak Acceleration
     		if (myDataList.get(i)[4]>Double.parseDouble(peakAccelerationLabel.getText())) 
-    			setPeakAccelerationLabel(String.valueOf(myDataList.get(i)[5]));
+    		setPeakAccelerationLabel(String.valueOf(myDataList.get(i)[5]));
     		//set Current Acceleration
     		setCurrentAccelerationLabel(String.valueOf(myDataList.get(i)[5]));
     		//setCurrentRSSI

@@ -56,35 +56,11 @@ public class MainApp extends Application {
 //    			System.out.println(parser.parse(str).length);
     			myDataList.add(parser.parse((str)));
     		} catch (IllegalArgumentException e) {
-    			String subStr = str.substring(1, str.length()-2);
-    			String[] sub = subStr.split(",");
-    			if (sub.length != 11) { //if the number of data values does not equal number of parameters, ignore
-    				System.out.println(sub.length);
-    			} else if (str.charAt(0) != 'S' && str.charAt(str.length()-1) != 'E' && str.charAt(str.length()-2) != ',') {
-    				//if string does not follow data format, create new edited string 
-    				//add edited string to data list 
-    				String newstr1 = "S"+str+",E";
-    				myDataList.add(parser.parse(newstr1));
-    			} else if (str.charAt(0) != 'S') {
-    				//if string does not follow data format (first character not S), create new edited string 
-    				//add edited string to data list 
-    				String newstr2 = "S"+str;
-    				myDataList.add(parser.parse(newstr2));
-    			} else if (str.charAt(str.length()-1) != 'E') {
-    				//if string does not follow data format (last character not E), create new edited string 
-    				//add edited string to data list 
-    				String newstr3 = str + "E";
-    				myDataList.add(parser.parse(newstr3));
-    			} else if (str.charAt(str.length()-2) != ',') {
-    				//if string does not follow data format, create new edited string 
-    				//add edited string to data list 
-    				String newstr4 = str.substring(0, str.length()-2) + ",E";
-    				myDataList.add(parser.parse(newstr4));
+    			System.out.println("invalid data");
     			} 
     		}
-    	}
 //    	System.out.println(myData.size());
-//    	System.out.println(myDataList.size());
+    	System.out.println(myDataList.size());
     	mainController.startTimer(myDataList);	//start timer animation display
     }
 
